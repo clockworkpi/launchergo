@@ -1,0 +1,12 @@
+retroarch-core-options.cfg
+*.lpl
+*.swp
+.bsv
+*.pyc
+sysgo/.powerlevel
+sysgo/.buttonslayout
+sysgo/.lang
+*.cfg
+**/Jobs/*
+!**/Jobs/.gitkeep
+
