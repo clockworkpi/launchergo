@@ -356,7 +356,7 @@ awful.rules.rules = {
 -- }}}
 
 
-local gs_class = {"run.py","gsnotify","gsnotify-arm","retroarch","main","GSPLauncher"}
+local gs_class = {"run.py","gsnotify","gsnotify-arm","retroarch","main","gsplauncher"}
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
