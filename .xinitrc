@@ -1,4 +1,3 @@
-feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/loading.png 
+feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/desktopbg.jpg 
 exec ~/launchergo/load.sh &
-exec ~/launcher/sys.py/gsnotify/gsnotify-arm &
-exec awesome -c ~/launchergo/awesome/rc.lua
+exec /usr/bin/twm -f ~/launchergo/.twmrc 
