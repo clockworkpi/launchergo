@@ -5,8 +5,8 @@ then
    mpd ~/.mpd.conf
       if [[ $SCREEN =~ .*320.* ]]
       then
-         startx /home/cpi/launchergo/.xinitrc_320 -- -nocursor > /tmp/x.log 2>&1
+         startx /home/cpi/launchergo/.xinitrc -- -nocursor > /tmp/x.log 2>&1
       else
-         startx /home/cpi/launchergo/.xinitrc > /tmp/x.log 2>&1
+         startx /home/cpi/launchergo/.xinitrc hdmi > /tmp/x.log 2>&1
       fi
 fi
