@@ -1,0 +1,8 @@
+bios
+bios/*
+screenshots
+screenshots/*
+.pcsx
+.pcsx/*
+*.log
+
