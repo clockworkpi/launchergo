@@ -13,7 +13,7 @@ gameshell )
 	exec ~/launchergo/load.sh &
 	exec ~/launcher/sys.py/gsnotify/gsnotify-arm &
 #	exec awesome -c ~/launchergo/awesome/rc.lua
-	exec ~/launchergo/dwm-mod
+	exec ~/launchergo/dwm-mod -w
 	;;
 *) 
 	exec $1;;
