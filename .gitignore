@@ -20,3 +20,5 @@ screenshots/*
 .pcsx/*
 *.log
 !md5sum.log
+.DS_Store
+sysgo/.*
