@@ -22,3 +22,4 @@ screenshots/*
 !md5sum.log
 .DS_Store
 sysgo/.*
+*-local.ini
