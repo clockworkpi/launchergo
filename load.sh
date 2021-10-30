@@ -4,5 +4,5 @@ BASENAME=`dirname "$0"`
 
 cd $BASENAME
 
-./launchergo
+./launchergo > /tmp/x.log
 
