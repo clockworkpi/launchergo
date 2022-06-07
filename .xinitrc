@@ -4,6 +4,7 @@ case $session in
 hdmi )
 	exec ~/launcher/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
 	feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/desktopbg.jpg
+	cd ~/launchergo/
 	exec ~/launchergo/app &
 	exec ~/launchergo/load.sh &
 	exec ~/launcher/sys.py/gsnotify/gsnotify-arm daemon &
@@ -13,6 +14,7 @@ hdmi )
 gameshell ) 
 	exec ~/launcher/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
 	feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/loading.png
+	cd ~/launchergo/
 	exec ~/launchergo/app &
 	exec ~/launchergo/load.sh &
 	exec ~/launcher/sys.py/gsnotify/gsnotify-arm &
