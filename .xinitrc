@@ -2,7 +2,7 @@ session=${1:-gameshell}
 
 case $session in
 hdmi )
-	exec ~/launcher/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
+	exec /usr/bin/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
 	feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/desktopbg.jpg
 	cd ~/launchergo/
 	exec ~/launchergo/app &
@@ -12,7 +12,7 @@ hdmi )
 	exec ~/launchergo/dwm-mod
 	;;
 gameshell ) 
-	exec ~/launcher/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
+	exec /usr/bin/aria2c --conf-path=/home/cpi/launcher/aria2.conf &
 	feh --bg-center ~/launchergo/sysgo/gameshell/wallpaper/loading.png
 	cd ~/launchergo/
 	exec ~/launchergo/app &
