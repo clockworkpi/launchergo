@@ -1,9 +1,9 @@
 SCREEN=`cat /sys/class/graphics/fb0/modes`
 
-XORG_CONF="~/launchergo/.xorg.conf"
+XORG_CONF="/home/cpi/launchergo/.xorg.conf"
 if [ -f /home/cpi/.lima ]
 then
-XORG_CONF="~/launchergo/.xorg_lima.conf"
+XORG_CONF="/home/cpi/launchergo/.xorg_lima.conf"
 fi
 
 if [ -f /tmp/autologin ]
@@ -14,13 +14,13 @@ then
       then
 	while :
 	do
-         startx /home/cpi/launchergo/.xinitrc -- -xf86config $XORG_CONF -nocursor > /tmp/x.log 2>&1
+         startx /home/cpi/launchergo/.xinitrc -- -xf86config $XORG_CONF -nocursor -logfile /tmp/xorg.log > /tmp/x.log 2>&1
 	 sleep 1
 	done
       else
 	while :
 	do
-         startx /home/cpi/launchergo/.xinitrc hdmi -- -xf86config $XORG_CONF > /tmp/x.log 2>&1
+         startx /home/cpi/launchergo/.xinitrc hdmi -- -xf86config $XORG_CONF -logfile /tmp/xorg.log > /tmp/x.log 2>&1
 	 sleep 1
 	done
       fi
